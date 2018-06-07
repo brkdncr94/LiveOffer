@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs310.brkdncr.liveoffer_deneme2.ListActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="HOME"
+            android:layout_gravity="left"
+            android:id="@+id/homeButton"
+            android:onClick="returnHome"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/locationText"
+            android:text="DENEME"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.96" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="REFRESH"
+            android:layout_gravity="right"
+            android:id="@+id/refreshButton"
+            android:onClick="refresh" />
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"></FrameLayout>
+
+</LinearLayout>

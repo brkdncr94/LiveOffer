@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs310.brkdncr.liveoffer_deneme2.SelectionActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please choose one or more categories"
+            android:id="@+id/textView"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="Food"
+            android:id="@+id/foodButton"
+            android:layout_weight="0.50"
+            android:onClick="addCategory"
+            android:background="#dc3e1e"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:text="Music"
+            android:id="@+id/musicButton"
+            android:layout_weight="0.50"
+            android:onClick="addCategory"
+            android:background="#dc3e1e"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Clothing"
+            android:id="@+id/clothingButton"
+            android:layout_weight="0.50"
+            android:onClick="addCategory"
+            android:background="#dc3e1e"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Beauty"
+            android:id="@+id/beautyButton"
+            android:layout_weight="0.50"
+            android:onClick="addCategory"
+            android:background="#dc3e1e"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Continue"
+            android:id="@+id/continueButton"
+            android:onClick="scanDeals"/>
+    </LinearLayout>
+
+</LinearLayout>

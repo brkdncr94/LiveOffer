@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="cs310.brkdncr.liveoffer_deneme2.OfferActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/offerTitle"
+        android:text="OFFER TITLE"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/offerDescription"
+        android:text="OFFER DESCRIPTION"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/companyName"
+        android:text="COMPANY NAME"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/companyAddress"
+        android:text="ADDRESS"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/companyCoordinates"
+        android:text="COORDINATES"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show in Google Maps"
+        android:id="@+id/mapButton"
+        android:layout_marginTop="50dp"
+        android:onClick="goToMap"/>
+
+
+</LinearLayout>

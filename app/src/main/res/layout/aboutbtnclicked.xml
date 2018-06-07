@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_gravity="left"
+            android:id="@+id/backhomebtn"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:id="@+id/abouttxt"
+            android:paddingTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="80dp" />
+    </LinearLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infotxt"
+        android:paddingTop="40dp"
+        android:text="THIS APP PROVIDES LIFE OFFERS MADE BY COMPANIES TO THE USERS. APP IDENTIFIES THE LOCATION OF THE USER AND CUSTOMIZES ALL THE OFFERS AROUND THE USER ACCORDINGLY."
+        android:gravity="center_horizontal" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n \n Other Information"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/otherinfo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n \n Baran Koseoglu 16963 \n Burak Dincer 16916 \n Erinc Uzumluoglu 16714 \n Bengu Erenler 16873\n  \n app version:v4.0.0 api 14 "
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/otherinfo"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="COPYRIGHT 2016"
+            android:gravity="center_horizontal"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
